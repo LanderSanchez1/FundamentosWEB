@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscar - Lánder Sánchez</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Página de Búsqueda</h1>
+    </header>
+
+    <nav>
+        <a href="../../index.html">Inicio</a>
+        <a href="../horario/horario.html">Horario</a>
+        <a href="../multimedia/multimedia.html">Multimedia</a>
+        <a href="../contacto/contacto.html">Contacto</a>
+        <a href="buscar.html">Buscar</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Inicio de Sesión</h2>
+
+            <form method="POST">
+                <div>
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <br>
+
+                <button type="submit">Iniciar sesión</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Formulario de Búsqueda</h2>
+
+            <form method="GET">
+                <label for="query">Buscar:</label>
+                <input type="text" id="query" name="query">
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Agendar Asignatura</h2>
+
+            <form>
+
+                <div>
+                    <label for="asignatura">Asignatura:</label>
+
+                    <select id="asignatura" name="asignatura" required>
+                        <option value="">Seleccione una asignatura</option>
+                        <option value="bases_datos">Sistemas de Bases de Datos</option>
+                        <option value="fundamentos_web">Fundamentos Web</option>
+                        <option value="redes">Redes de Comunicaciones</option>
+                        <option value="interfaces">Interfaces y Multimedia</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="hora">Hora:</label>
+                    <input type="time"
+                           id="hora"
+                           name="hora"
+                           min="08:00"
+                           max="17:00"
+                           required>
+                </div>
+
+                <br>
+
+                <button type="submit">Guardar</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Creado por Lánder Sánchez.</p>
+        <p>Clase de Fundamentos Web - HTML Semántico</p>
+    </footer>
+
+</body>
+</html>
