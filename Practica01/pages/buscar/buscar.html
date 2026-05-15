@@ -1,111 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Buscar - Lánder Sánchez</title>
 </head>
 
 <body>
-
     <header>
         <h1>Página de Búsqueda</h1>
     </header>
-
     <nav>
         <a href="../../index.html">Inicio</a>
         <a href="../horario/horario.html">Horario</a>
         <a href="../multimedia/multimedia.html">Multimedia</a>
         <a href="../contacto/contacto.html">Contacto</a>
         <a href="buscar.html">Buscar</a>
+        <a href="../formularios/formularios.html">Formularios</a>
+        <a href="../login/login.html">Login</a>
     </nav>
-
     <main>
-
         <section>
             <h2>Inicio de Sesión</h2>
-
             <form method="POST">
-                <div>
-                    <label for="usuario">Usuario:</label>
-                    <input type="text" id="usuario" name="usuario" required>
-                </div>
-
-                <br>
-
-                <div>
-                    <label for="password">Contraseña:</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-
-                <br>
-
-                <button type="submit">Iniciar sesión</button>
+                <div> <label for="usuario">Usuario:</label> <input type="text" id="usuario" name="usuario" required>
+                </div> <br>
+                <div> <label for="password">Contraseña:</label> <input type="password" id="password" name="password"
+                        required> </div> <br> <button type="submit">Iniciar sesión</button>
             </form>
         </section>
-
         <hr>
-
         <section>
             <h2>Formulario de Búsqueda</h2>
-
-            <form method="GET">
-                <label for="query">Buscar:</label>
-                <input type="text" id="query" name="query">
-                <button type="submit">Buscar</button>
-            </form>
+            <form method="GET"> <label for="query">Buscar:</label> <input type="text" id="query" name="query"> <button
+                    type="submit">Buscar</button> </form>
         </section>
-
         <hr>
-
         <section>
             <h2>Agendar Asignatura</h2>
-
             <form>
-
-                <div>
-                    <label for="asignatura">Asignatura:</label>
-
-                    <select id="asignatura" name="asignatura" required>
+                <div> <label for="asignatura">Asignatura:</label> <select id="asignatura" name="asignatura" required>
                         <option value="">Seleccione una asignatura</option>
                         <option value="bases_datos">Sistemas de Bases de Datos</option>
                         <option value="fundamentos_web">Fundamentos Web</option>
                         <option value="redes">Redes de Comunicaciones</option>
                         <option value="interfaces">Interfaces y Multimedia</option>
-                    </select>
-                </div>
-
-                <br>
-
-                <div>
-                    <label for="fecha">Fecha:</label>
-                    <input type="date" id="fecha" name="fecha" required>
-                </div>
-
-                <br>
-
-                <div>
-                    <label for="hora">Hora:</label>
-                    <input type="time"
-                           id="hora"
-                           name="hora"
-                           min="08:00"
-                           max="17:00"
-                           required>
-                </div>
-
-                <br>
-
-                <button type="submit">Guardar</button>
-
+                    </select> </div> <br>
+                <div> <label for="fecha">Fecha:</label> <input type="date" id="fecha" name="fecha" required> </div> <br>
+                <div> <label for="hora">Hora:</label> <input type="time" id="hora" name="hora" min="08:00" max="17:00"
+                        required> </div> <br> <button type="submit">Guardar</button>
             </form>
         </section>
-
     </main>
-
+    <section>
+        <h2>Encuesta: Intereses y Frecuencia</h2>
+        <p>Seleccione los temas que le interesan y con qué frecuencia desea recibir noticias. Cada bloque está plegable
+            para evitar mostrar un formulario demasiado largo.</p>
+        <form method="POST" action="#">
+            <details>
+                <summary>Intereses</summary>
+                <fieldset>
+                    <legend>Intereses</legend>
+                    <div> <input type="checkbox" id="int_tecnologia" name="intereses[]" value="tecnologia"> <label
+                            for="int_tecnologia">Tecnología</label> </div>
+                    <div> <input type="checkbox" id="int_politica" name="intereses[]" value="politica"> <label
+                            for="int_politica">Política</label> </div>
+                    <div> <input type="checkbox" id="int_deportes" name="intereses[]" value="deportes"> <label
+                            for="int_deportes">Deportes</label> </div>
+                    <div> <input type="checkbox" id="int_cultura" name="intereses[]" value="cultura"> <label
+                            for="int_cultura">Cultura</label> </div>
+                    <div> <input type="checkbox" id="int_ciencia" name="intereses[]" value="ciencia"> <label
+                            for="int_ciencia">Ciencia</label> </div>
+                    <div> <input type="checkbox" id="int_economia" name="intereses[]" value="economia"> <label
+                            for="int_economia">Economía</label> </div>
+                    <div> <input type="checkbox" id="int_salud" name="intereses[]" value="salud"> <label
+                            for="int_salud">Salud</label> </div>
+                    <div> <input type="checkbox" id="int_educacion" name="intereses[]" value="educacion"> <label
+                            for="int_educacion">Educación</label> </div>
+                    <div> <input type="checkbox" id="int_entretenimiento" name="intereses[]" value="entretenimiento">
+                        <label for="int_entretenimiento">Entretenimiento</label> </div>
+                    <div> <input type="checkbox" id="int_medioambiente" name="intereses[]" value="medioambiente"> <label
+                            for="int_medioambiente">Medio Ambiente</label> </div>
+                </fieldset>
+            </details>
+            <details>
+                <summary>Frecuencia</summary>
+                <fieldset>
+                    <legend>Frecuencia</legend>
+                    <div> <input type="radio" id="freq_diaria" name="frecuencia" value="diaria" required> <label
+                            for="freq_diaria">Diaria</label> </div>
+                    <div> <input type="radio" id="freq_semanal" name="frecuencia" value="semanal"> <label
+                            for="freq_semanal">Semanal</label> </div>
+                    <div> <input type="radio" id="freq_mensual" name="frecuencia" value="mensual"> <label
+                            for="freq_mensual">Mensual</label> </div>
+                </fieldset>
+            </details> <br> <button type="submit">Enviar preferencias</button>
+        </form>
+    </section>
     <footer>
         <p>Creado por Lánder Sánchez.</p>
         <p>Clase de Fundamentos Web - HTML Semántico</p>
     </footer>
-
 </body>
+
 </html>
