@@ -1,9 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Contacto - Lánder Sánchez</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eef6ff;
+            color: #1b2a4a;
+            line-height: 1.6;
+        }
+
+        header,
+        nav,
+        main,
+        footer {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        header {
+            background-color: #dbe9ff;
+            border-bottom: 4px solid #7aa9ff;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #154478;
+            text-align: center;
+        }
+
+        nav {
+            margin: 1rem 0;
+            background-color: #dbe9ff;
+            padding: 1rem 1rem;
+            border-radius: 8px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+
+        nav a {
+            color: #1c3f72;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 1rem 0 2rem;
+        }
+
+        .section-card {
+            background-color: #ffffff;
+            border: 1px solid #d3dce6;
+            border-radius: 10px;
+            padding: 1.4rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .section-card h2 {
+            margin-top: 0;
+            font-size: 1.45rem;
+            color: #1a3766;
+        }
+
+        .section-card p {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-info strong {
+            color: #1a3766;
+            min-width: 120px;
+        }
+
+        .social-list {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .social-list li {
+            margin: 0;
+        }
+
+        .social-list a {
+            color: #2c5aa0;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        .social-list a:hover {
+            text-decoration: underline;
+            color: #1f4472;
+        }
+
+        footer {
+            border-top: 1px solid #d3dce6;
+            padding: 1rem 0 2rem;
+            color: #4b5e7a;
+            text-align: center;
+        }
+
+        @media (max-width: 700px) {
+            nav a {
+                display: block;
+                margin: 0.35rem 0;
+            }
+
+            .social-list {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <h1>Información de Contacto</h1>
@@ -18,17 +162,22 @@
         <a href="../login/login.html">Login</a>
     </nav>
     <main>
-        <section>
-            <h2>Mis Redes Sociales</h2>
-            <ul>
+        <section class="section-card">
+            <h2>Redes Sociales</h2>
+            <p>Sígueme en mis redes sociales para estar actualizado:</p>
+            <ul class="social-list">
                 <li><a href="https://www.instagram.com/_lander_s/" target="_blank">Instagram</a></li>
-            </ul>   
+            </ul>
         </section>
-        <section>
-            <h2>Información de Contacto</h2>
-            <p>Email: ljsanchez6@espe.edu.ec</p>
-            <p>Teléfono: +593 959591024</p>
-              <p>Ubicación: Santo Domingo, Ecuador</p>
+
+        <section class="section-card">
+            <h2>Datos de Contacto</h2>
+            <p>Puedes contactarme a través de los siguientes medios:</p>
+            <div class="contact-info">
+                <p><strong>Correo:</strong> ljsanchez6@espe.edu.ec</p>
+                <p><strong>Teléfono:</strong> +593 959591024</p>
+                <p><strong>Ubicación:</strong> Santo Domingo, Ecuador</p>
+            </div>
         </section>
     </main>
     <footer>
@@ -36,4 +185,5 @@
         <p>Clase de Fundamentos Web - HTML Semántico</p>
     </footer>
 </body>
+
 </html>

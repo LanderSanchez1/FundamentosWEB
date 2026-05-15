@@ -3,6 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <title>Horario Académico - Lánder Sánchez</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eef6ff;
+            color: #1b2a4a;
+            line-height: 1.6;
+        }
+
+        header,
+        nav,
+        main,
+        footer {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        header {
+            background-color: #dbe9ff;
+            border-bottom: 4px solid #7aa9ff;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #154478;
+            text-align: center;
+        }
+
+        nav {
+            margin: 1rem 0;
+            background-color: #dbe9ff;
+            padding: 1rem 1rem;
+            border-radius: 8px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+
+        nav a {
+            color: #1c3f72;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 1rem 0 2rem;
+        }
+
+        .section-card {
+            background-color: #ffffff;
+            border: 1px solid #d3dce6;
+            border-radius: 10px;
+            padding: 1.4rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .section-card h2 {
+            margin-top: 0;
+            font-size: 1.45rem;
+            color: #1a3766;
+        }
+
+        .section-card p {
+            margin: 0 0 1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        table thead {
+            background-color: #dbe9ff;
+        }
+
+        table th,
+        table td {
+            padding: 0.8rem;
+            text-align: left;
+            border: 1px solid #aac4e6;
+            color: #1b2a4a;
+        }
+
+        table th {
+            font-weight: 600;
+            color: #154478;
+            background-color: #dbe9ff;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: #f7faff;
+        }
+
+        table tbody tr:hover {
+            background-color: #eef6ff;
+        }
+
+        footer {
+            border-top: 1px solid #d3dce6;
+            padding: 1rem 0 2rem;
+            color: #4b5e7a;
+            text-align: center;
+        }
+
+        @media (max-width: 700px) {
+            nav a {
+                display: block;
+                margin: 0.35rem 0;
+            }
+
+            table th,
+            table td {
+                padding: 0.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,9 +149,10 @@
         <a href="../login/login.html">Login</a>
     </nav>
     <main>
-        <section>
+        <section class="section-card">
             <h2>Mi Horario de Clases</h2>
-            <table border="1">
+            <p>A continuación se detalla el horario semanal de mis asignaturas para el semestre actual:</p>
+            <table>
                 <thead>
                     <tr>
                         <th>Día</th>

@@ -25,30 +25,34 @@
             background-color: #dbe9ff;
             border-bottom: 4px solid #7aa9ff;
             padding: 1.5rem 0;
+            text-align: center;
         }
 
         header h1 {
             margin: 0;
             font-size: 2rem;
             color: #154478;
+            text-align: center;
         }
 
         nav {
             margin: 1rem 0;
             background-color: #dbe9ff;
-            padding: 0.75rem 1rem;
+            padding: 1rem 1rem;
             border-radius: 8px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0;
         }
 
         nav a {
             color: #1c3f72;
             text-decoration: none;
-            margin-right: 1rem;
+            padding: 0.5rem 1rem;
             font-weight: 600;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
+            display: inline-block;
         }
 
         nav a:hover {
@@ -157,6 +161,7 @@
         <h1>Formularios HTML5</h1>
     </header>
     <nav>
+        
         <a href="../../index.html">Inicio</a>
         <a href="../horario/horario.html">Horario</a>
         <a href="../multimedia/multimedia.html">Multimedia</a>
@@ -164,6 +169,7 @@
         <a href="../buscar/buscar.html">Buscar</a>
         <a href="formularios.html">Formularios</a>
         <a href="../login/login.html">Login</a>
+       
     </nav>
     <main>
         <!-- Formulario de contacto -->
@@ -263,7 +269,7 @@
         <section class="section-card">
             <h2>Formulario de búsqueda</h2>
             <p>Usa este formulario para buscar asignaturas o temas dentro de tu carrera.</p>
-            <form method="GET">
+            <form method="GET" action="../buscar/buscar.html">
                 <fieldset>
                     <legend>Búsqueda</legend>
                     <div class="form-row">

@@ -3,6 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <title>Multimedia - Lánder Sánchez</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eef6ff;
+            color: #1b2a4a;
+            line-height: 1.6;
+        }
+
+        header,
+        nav,
+        main,
+        footer {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        header {
+            background-color: #dbe9ff;
+            border-bottom: 4px solid #7aa9ff;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #154478;
+            text-align: center;
+        }
+
+        nav {
+            margin: 1rem 0;
+            background-color: #dbe9ff;
+            padding: 1rem 1rem;
+            border-radius: 8px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+
+        nav a {
+            color: #1c3f72;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 1rem 0 2rem;
+        }
+
+        .section-card {
+            background-color: #ffffff;
+            border: 1px solid #d3dce6;
+            border-radius: 10px;
+            padding: 1.4rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .section-card h2 {
+            margin-top: 0;
+            font-size: 1.45rem;
+            color: #1a3766;
+        }
+
+        .section-card p {
+            margin: 0 0 1rem;
+        }
+
+        .media-container {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        figure {
+            margin: 0;
+            padding: 0.5rem;
+        }
+
+        figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        figure video,
+        figure audio {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        figcaption {
+            margin-top: 0.8rem;
+            font-style: italic;
+            color: #4b5e7a;
+            font-size: 0.95rem;
+        }
+
+        video,
+        audio {
+            max-width: 100%;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        footer {
+            border-top: 1px solid #d3dce6;
+            padding: 1rem 0 2rem;
+            color: #4b5e7a;
+            text-align: center;
+        }
+
+        @media (max-width: 700px) {
+            nav a {
+                display: block;
+                margin: 0.35rem 0;
+            }
+
+            .section-card {
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,24 +153,35 @@
         <a href="../login/login.html">Login</a>
     </nav>
     <main>
-        <section>
+        <section class="section-card">
             <h2>Imagen</h2>
-            <figure>
-                <img src="../../img/espe/imagenEjemploEspe.png" alt="Logo de la ESPE">
-                <figcaption>Universidad de las Fuerzas Armadas</figcaption>
-            </figure>
+            <p>A continuación se muestra el logo de la Universidad de las Fuerzas Armadas ESPE:</p>
+            <div class="media-container">
+                <figure>
+                    <img src="../../img/espe/imagenEjemploEspe.png" alt="Logo de la ESPE">
+                    <figcaption>Universidad de las Fuerzas Armadas</figcaption>
+                </figure>
+            </div>
         </section>
-        <section>
+
+        <section class="section-card">
             <h2>Video</h2>
-            <video src="../../video/VideoEjemplo2.mp4" controls width="400" poster="../../img/espe/imagenEjemploEspe.png" muted loop>
-                Tu navegador no soporta video
-            </video>
+            <p>Aquí se presenta un video de ejemplo:</p>
+            <div class="media-container">
+                <video src="../../video/VideoEjemplo2.mp4" controls width="400" poster="../../img/espe/imagenEjemploEspe.png" muted loop>
+                    Tu navegador no soporta video
+                </video>
+            </div>
         </section>
-        <section>
+
+        <section class="section-card">
             <h2>Audio</h2>
-            <audio src="../../audio/AudioEjemplo1.mpeg" controls loop preload="metadata">
-                Tu navegador no soporta audio
-            </audio>
+            <p>A continuación puedes escuchar un archivo de audio:</p>
+            <div class="media-container">
+                <audio src="../../audio/AudioEjemplo1.mpeg" controls loop preload="metadata">
+                    Tu navegador no soporta audio
+                </audio>
+            </div>
         </section>
     </main>
     <footer>
