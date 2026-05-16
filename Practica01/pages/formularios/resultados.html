@@ -36,15 +36,18 @@
         }
 
         nav {
-            margin: 1rem 0;
+            margin: 1rem auto;
             background-color: #dbe9ff;
             padding: 1rem 1rem;
             border-radius: 8px;
             text-align: center;
             display: flex;
             justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
-            gap: 0;
+            gap: 0.5rem;
+            width: 100%;
+            max-width: 980px;
         }
 
         nav a {
@@ -111,14 +114,43 @@
         <section class="section-card">
             <h2>Parámetros GET</h2>
             <p>En esta página, los datos se reciben mediante parámetros GET en la URL.</p>
-            <p>Por ejemplo, si envías el formulario, la dirección quedará con la información así:</p>
-            <div class="code-box">https://tu-sitio/pages/formularios/resultados.html?asignatura=fundamentos_web</div>
+            <p>Si usaste el método GET, podrás visualizar los valores enviados en la barra de direcciones URL del navegador.</p>
             <p>Simplemente revisa la parte después de <strong>?</strong> en la URL para ver los valores enviados.</p>
+            <div class="section-card" style="margin-top:1.5rem;">
+                <h3>Datos recibidos</h3>
+                <div id="resultados-contenido">
+                    <p>No se han recibido parámetros en la URL.</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <p>Creado por Lánder Sánchez.</p>
         <p>Clase de Fundamentos Web - HTML Semántico</p>
     </footer>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const container = document.getElementById('resultados-contenido');
+        if (params.toString()) {
+            const keys = Array.from(new Set(params.keys()));
+            const list = document.createElement('dl');
+            list.style.margin = '0';
+            list.style.padding = '0';
+            keys.forEach(key => {
+                const values = params.getAll(key);
+                const dt = document.createElement('dt');
+                dt.textContent = key;
+                dt.style.fontWeight = '700';
+                dt.style.marginTop = '0.75rem';
+                const dd = document.createElement('dd');
+                dd.textContent = values.join(', ');
+                dd.style.margin = '0 0 0.75rem 0';
+                list.appendChild(dt);
+                list.appendChild(dd);
+            });
+            container.innerHTML = '';
+            container.appendChild(list);
+        }
+    </script>
 </body>
 </html>

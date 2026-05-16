@@ -36,15 +36,18 @@
         }
 
         nav {
-            margin: 1rem 0;
+            margin: 1rem auto;
             background-color: #dbe9ff;
             padding: 1rem 1rem;
             border-radius: 8px;
             text-align: center;
             display: flex;
             justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
-            gap: 0;
+            gap: 0.5rem;
+            width: 100%;
+            max-width: 980px;
         }
 
         nav a {
@@ -176,7 +179,7 @@
         <section class="section-card">
             <h2>Formulario de contacto</h2>
             <p>Envía tus datos de contacto y un mensaje breve mediante este formulario.</p>
-            <form method="POST">
+            <form method="GET" action="resultados.html">
                 <fieldset>
                     <legend>Datos de contacto</legend>
                     <div class="form-row">
@@ -203,7 +206,7 @@
         <section class="section-card">
             <h2>Registro rápido</h2>
             <p>Ejemplo de formulario de registro con datos básicos y selección de carrera.</p>
-            <form method="POST">
+            <form method="GET" action="resultados.html">
                 <fieldset>
                     <legend>Crear cuenta</legend>
                     <div class="form-row">
@@ -236,7 +239,7 @@
         <section class="section-card">
             <h2>Encuesta de interés</h2>
             <p>Selecciona tus intereses y la frecuencia con la que deseas recibir novedades.</p>
-            <form method="POST">
+            <form method="GET" action="resultados.html">
                 <fieldset>
                     <legend>Preferencias</legend>
                     <div class="form-row">
@@ -269,7 +272,7 @@
         <section class="section-card">
             <h2>Formulario de búsqueda</h2>
             <p>Usa este formulario para buscar asignaturas o temas dentro de tu carrera.</p>
-            <form method="GET" action="../buscar/buscar.html">
+            <form method="GET" action="resultados.html">
                 <fieldset>
                     <legend>Búsqueda</legend>
                     <div class="form-row">
@@ -306,7 +309,7 @@
         <section class="section-card">
             <h2>Formulario con checkbox</h2>
             <p>Selecciona los intereses tecnológicos que prefieras.</p>
-            <form method="POST">
+            <form method="GET" action="resultados.html">
                 <fieldset>
                     <legend>Intereses tecnológicos</legend>
                     <div class="form-row">
@@ -326,7 +329,7 @@
         <section class="section-card">
             <h2>Formulario con fecha</h2>
             <p>Selecciona una fecha importante para tu agenda o actividad académica.</p>
-            <form method="GET">
+            <form method="GET" action="resultados.html">
                 <fieldset>
                     <legend>Fecha requerida</legend>
                     <div class="form-row">

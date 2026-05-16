@@ -36,15 +36,18 @@
         }
 
         nav {
-            margin: 1rem 0;
+            margin: 1rem auto;
             background-color: #dbe9ff;
             padding: 1rem 1rem;
             border-radius: 8px;
             text-align: center;
             display: flex;
             justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
-            gap: 0;
+            gap: 0.5rem;
+            width: 100%;
+            max-width: 980px;
         }
 
         nav a {
@@ -154,7 +157,7 @@
         <section class="form-card">
             <h2>Iniciar sesión</h2>
             <p>Ingresa tu correo electrónico y contraseña para acceder.</p>
-            <form method="POST">
+            <form method="GET" action="../formularios/resultados.html">
                 <fieldset>
                     <legend>Cuenta</legend>
                     <div class="form-row">
