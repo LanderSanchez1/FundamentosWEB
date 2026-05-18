@@ -1,0 +1,52 @@
+﻿body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #00796b;
+    color: white;
+}
+
+nav {
+    background-color: #004d40;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+}
+
+section {
+    background-color: white;
+}
+
+h2 {
+    color: #00796b;
+}
+
+button {
+    background-color: #00796b;
+    color: white;
+}
+
+button:hover {
+    background-color: #00574b;
+}
+
+footer {
+    background-color: #e0f2f1;
+    color: #004d40;
+}
+
+.logout {
+    background-color: #b71c1c;
+}
+
+.logout:hover {
+    background-color: #7f0000;
+}

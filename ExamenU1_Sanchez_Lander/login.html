@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCitas Web - Login</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>MediCitas Web</h1>
+        <p>Inicio de sesión para gestionar citas médicas</p>
+    </header>
+    <main>
+        <section class="form-card">
+            <h2>Ingresar</h2>
+
+            <form action="principal.html" method="get">
+                <label for="usuario">Correo o usuario</label>
+                <input type="text" id="usuario" name="usuario" required>
+
+                <label for="clave">Contraseña</label>
+                <input type="password" id="clave" name="clave" minlength="8" maxlength="16" required>
+
+                <button type="submit">Ingresar</button>
+            </form>
+
+
+            <p>¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>MediCitas Web - Lander Sánchez</p>
+    </footer>
+</body>
+
+
+</html>
