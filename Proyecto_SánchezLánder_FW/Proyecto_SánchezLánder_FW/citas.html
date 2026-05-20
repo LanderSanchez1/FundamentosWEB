@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>MediCitas Web - Citas</title>
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MediCitas Web - Citas</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
@@ -32,38 +34,39 @@
     </section>
 
     <section class="content schedule-form">
-      <form action="citas.html" method="get">
-        <label for="nombre">Nombre completo</label>
-        <input id="nombre" name="nombre" type="text" placeholder="Ej. Juan Pérez" required>
+        <form action="citas.html" method="get">
+            <label for="nombre">Nombre completo</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Ej. Juan Pérez" required>
 
-        <label for="email">Correo electrónico</label>
-        <input id="email" name="email" type="email" placeholder="ejemplo@correo.com" required>
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" placeholder="ejemplo@correo.com" required>
 
-        <label for="especialidad">Especialidad</label>
-        <select id="especialidad" name="especialidad" required>
-          <option value="">Seleccione una especialidad</option>
-          <option value="medicina_general">Medicina general</option>
-          <option value="pediatria">Pediatría</option>
-          <option value="odontologia">Odontología</option>
-        </select>
+            <label for="especialidad">Especialidad</label>
+            <select id="especialidad" name="especialidad" required>
+                <option value="">Seleccione una especialidad</option>
+                <option value="medicina_general">Medicina general</option>
+                <option value="pediatria">Pediatría</option>
+                <option value="odontologia">Odontología</option>
+            </select>
 
-        <label>Tipo de consulta</label>
-        <div class="radio-group">
-          <label><input type="radio" name="tipo" value="presencial" checked> Presencial</label>
-          <label><input type="radio" name="tipo" value="virtual"> Virtual</label>
-        </div>
+            <label>Tipo de consulta</label>
+            <div class="radio-group">
+                <label><input type="radio" name="tipo" value="presencial" checked> Presencial</label>
+                <label><input type="radio" name="tipo" value="virtual"> Virtual</label>
+            </div>
 
-        <label for="fecha">Fecha</label>
-        <input id="fecha" name="fecha" type="date" required>
+            <label for="fecha">Fecha</label>
+            <input id="fecha" name="fecha" type="date" required>
 
-        <label for="hora">Hora</label>
-        <input id="hora" name="hora" type="time" required>
+            <label for="hora">Hora</label>
+            <input id="hora" name="hora" type="time" required>
 
-        <label for="notas">Notas adicionales</label>
-        <textarea id="notas" name="notas" rows="4" placeholder="Ingrese síntomas o comentarios"></textarea>
+            <label for="notas">Notas adicionales</label>
+            <textarea id="notas" name="notas" rows="4" placeholder="Ingrese síntomas o comentarios"></textarea>
 
-        <button type="submit">Agendar cita</button>
-      </form>
+            <button type="submit">Agendar cita</button>
+            <i class="fa-solid fa-calendar"></i>
+        </form>
 
       <div class="schedule-image">
         <img src="images/doctorr.png" alt="Formulario de citas médicas">
