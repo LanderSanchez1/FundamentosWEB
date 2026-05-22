@@ -222,14 +222,13 @@ footer {
     margin-top: 20px
 }
 
-@media(max-width:480px) {
-    .header-inner {
-        padding: 0 8px
+
+    @media(max-width:480px) {
+        .header-inner {
+            padding: 0 8px
+        }
+
+        nav ul {
+            flex-wrap: wrap
+        }
     }
-
-    nav ul {
-        flex-wrap: wrap
-
-
-    }
-}
